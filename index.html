@@ -240,40 +240,76 @@
     <!-- 设计亮点 -->
     <div class="card">
       <div class="section-title">✨ 设计亮点（Top 3）</div>
-      <div class="highlight-item">
-        <div class="highlight-title">① 列表页「分诊设计」</div>
-        <div class="highlight-desc">状态色标（红/黄/绿）+ 迷你趋势图同时呈现，用户无需点进详情就能判断服务优先级。这体现了对「故障排查是高压场景」的深刻理解——让用户在最短时间内完成心理分诊。</div>
-        <div class="highlight-tip">💡 启示：在我们产品的服务/任务列表中，可以引入状态色标+趋势迷你图，减少用户无效点击。</div>
+      <div class="highlight-item-img">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/12ecfe18260f869dbc1a6ad584d674ec.png" alt="应用列表分诊设计" loading="lazy">
+          <div class="img-label">应用列表页</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">① 列表页「分诊设计」</div>
+          <div class="highlight-desc">状态色标（红/黄/绿）+ 迷你趋势图同时呈现，用户无需点进详情就能判断服务优先级。体现了对「故障排查是高压场景」的深刻理解。</div>
+          <div class="highlight-tip">💡 启示：服务列表引入状态色标+趋势迷你图，减少用户无效点击。</div>
+        </div>
       </div>
-      <div class="highlight-item">
-        <div class="highlight-title">② Demo 边界保护机制</div>
-        <div class="highlight-desc">写操作（清理/编辑）全部 disabled，「退出 Demo」按钮始终可见。这降低了用户探索的心理顾虑，体现了对「Demo 是销售转化工具」的产品意识。</div>
-        <div class="highlight-tip">💡 启示：我们的演示/体验环境可以借鉴此模式，保护数据同时提高用户探索深度。</div>
+      <div class="highlight-item-img">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/08b51ebd14560ff2a51e95d0c1f2c841.png" alt="链路追踪 Trace 详情" loading="lazy">
+          <div class="img-label">Trace 详情瀑布图</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">② 链路追踪瀑布图</div>
+          <div class="highlight-desc">Trace 详情以瀑布图呈现各 Span 的耗时和依赖关系，颜色区分服务，一眼识别性能瓶颈在哪个环节。</div>
+          <div class="highlight-tip">💡 启示：链路类数据天然适合瀑布图，比表格更直观地展示时序和依赖。</div>
+        </div>
       </div>
-      <div class="highlight-item">
-        <div class="highlight-title">③ 多视角数据可视化</div>
-        <div class="highlight-desc">同一性能数据同时提供 KPI卡片 / 时序图 / Apdex / Top5排行榜四种视角，满足不同经验层级的运维人员（新手看卡片，专家看百分位图）。</div>
-        <div class="highlight-tip">💡 启示：数据展示应考虑不同用户画像的认知模型，提供多粒度的并行视图。</div>
+      <div class="highlight-item-img">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/375337f2522f44aa5bafa0e2dc6b6f40.png" alt="数据库慢查询分析" loading="lazy">
+          <div class="img-label">数据库分析页</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">③ SQL 慢查询排行可视化</div>
+          <div class="highlight-desc">数据库分析页将 SQL 慢查询以 Top N 排行 + 耗时条形图呈现，DBA/研发可快速定位最需要优化的 SQL，无需手动翻日志。</div>
+          <div class="highlight-tip">💡 启示：性能数据「排行榜化」比原始列表更有决策效率。</div>
+        </div>
       </div>
     </div>
 
     <!-- 体验痛点 -->
     <div class="card">
       <div class="section-title">🔧 体验痛点（Top 3）</div>
-      <div class="highlight-item pain">
-        <div class="highlight-title">① 信息密度过高，新手迷失</div>
-        <div class="highlight-desc">19个一级模块 + 9个详情Tab 全部平铺，无分组、无优先级引导、无「推荐路径」提示。新用户打开后不知从何入手，学习成本极高。</div>
-        <div class="highlight-tip">💡 改进建议：引入「场景化入口」（如「我要排查故障」「我要查性能趋势」），按场景聚合跨模块的操作路径。</div>
+      <div class="highlight-item-img pain">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/b5246fa9fc1d5af29b584f3546e867ab.png" alt="异常监控主界面" loading="lazy">
+          <div class="img-label">异常监控页（19个模块之一）</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">① 信息密度过高，新手迷失</div>
+          <div class="highlight-desc">19个一级模块 + 9个详情Tab 全部平铺，无分组、无优先级引导。新用户打开后不知从何入手，学习成本极高。</div>
+          <div class="highlight-tip">💡 改进建议：引入「场景化入口」（如「我要排查故障」），按场景聚合跨模块的操作路径。</div>
+        </div>
       </div>
-      <div class="highlight-item pain">
-        <div class="highlight-title">② 告警→根因路径断链</div>
-        <div class="highlight-desc">收到告警通知后，需要手动进入 APM → 应用列表 → 找到对应服务 → 切换 Tab 查看详情，无法从告警直接跳转到相关 Trace 或接口数据。</div>
-        <div class="highlight-tip">💡 改进建议：告警消息中直接内嵌「查看相关 Trace」「打开接口分析」深链，一键直达根因。</div>
+      <div class="highlight-item-img pain">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/70e318b92b4593ab890103fc4ed5716f.png" alt="链路追踪列表" loading="lazy">
+          <div class="img-label">链路追踪 — 需手动搜索 TraceID</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">② 无全局 Trace 搜索入口</div>
+          <div class="highlight-desc">拿到 TraceID 想直接定位时，需要进 APM → 左侧「链路追踪」→ 手动输入搜索，路径不直觉，无快捷方式。</div>
+          <div class="highlight-tip">💡 改进建议：顶部导航增加全局搜索框，支持直接输入 TraceID / 服务名 / IP 快速跳转。</div>
+        </div>
       </div>
-      <div class="highlight-item pain">
-        <div class="highlight-title">③ 无全局 Trace 搜索入口</div>
-        <div class="highlight-desc">当用户拿到一个 TraceID 想直接定位时，需要进 APM → 左侧「链路追踪」子菜单 → 手动输入搜索，路径不够直觉，且无快捷方式。</div>
-        <div class="highlight-tip">💡 改进建议：在顶部导航增加全局搜索框，支持直接输入 TraceID / 服务名 / IP 快速跳转。</div>
+      <div class="highlight-item-img pain">
+        <div class="highlight-img-wrap">
+          <img src="https://qcloudimg.tencent-cloud.cn/image/document/3234483894ecacfe5448690190f4de0f.png" alt="异常监控详情" loading="lazy">
+          <div class="img-label">异常详情 — 告警无深链</div>
+        </div>
+        <div class="highlight-text">
+          <div class="highlight-title">③ 告警→根因路径断链</div>
+          <div class="highlight-desc">收到告警后，需手动进入 APM → 应用列表 → 找服务 → 切换 Tab，无法从告警直接跳转到相关 Trace 或接口数据。</div>
+          <div class="highlight-tip">💡 改进建议：告警消息直接内嵌「查看相关 Trace」「打开接口分析」深链，一键直达根因。</div>
+        </div>
       </div>
     </div>
   </div>
