@@ -209,6 +209,39 @@ body {
 }
 .highlight-item.pain .highlight-tip { color: var(--red); }
 
+/* ── UPDATES ── */
+.updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.update-item {
+  border: 1px solid var(--gray-5);
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: box-shadow 0.2s;
+}
+.update-item:hover { box-shadow: 0 2px 8px rgba(0,82,217,0.1); }
+.update-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.update-date { font-size: 12px; color: var(--gray-4); font-weight: 600; }
+.update-module { font-size: 12px; color: var(--gray-3); margin-left: auto; }
+.update-desc { font-size: 13px; color: var(--gray-2); line-height: 1.5; }
+.update-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+.tag-new     { background: #E8F9F3; color: var(--green); }
+.tag-upgrade { background: var(--blue-light); color: var(--blue); }
+.tag-fix     { background: #FFF4F4; color: var(--red); }
+
 /* ── INSIGHT ── */
 .insight-box {
   background: linear-gradient(135deg, #F0F4FF 0%, #F5F0FF 100%);
